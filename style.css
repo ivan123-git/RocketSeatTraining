@@ -31,6 +31,7 @@ body {
     background-size: cover; /*cover all possible space*/
 
     background: var(--bg-url) no-repeat top center/cover; /*shorthand*/
+    height: 100vh; 
 }
 
 body * {
@@ -109,8 +110,6 @@ ul {
 }
 
 ul li a{
-    
-
     display: flex; 
     padding: 16px 24px; 
     align-items: center; 
@@ -159,3 +158,14 @@ footer {
     font-size: 14px;
 }
 
+/* media queries */
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg)
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg)
+    }
+}
